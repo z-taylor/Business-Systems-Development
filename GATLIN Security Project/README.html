@@ -1,0 +1,36 @@
+Week 3 - Systems Design (Designing Forms)
+
+////////////////
+INSTRUCTIONS:
+////////////////
+Resource: Ch. 10, "Designing Forms and Reports".
+-
+Design two forms for a new software application or business web app that will collect data from its user.
+-
+Draw these two forms. You may use free tools, such as Pencil Project, Microsoft® Paint, 
+Mockabilly (and many others) to create the mock-up interfaces; or you may draw the new forms 
+on a piece of paper and then, take a picture of it.
+
+////////////////
+
+Objective:
+I first planned what forms I would deisgn, I decided to stick with a user authentication form to regiester new 
+members and a checkout form for purchases. As instructions said, we were allowed to use any tool. I decided that
+my strongest deisng tool was Python and Django, for the purpose of the company being a cyber security organization.
+
+////////////////
+
+Difficulties:
+On the authentication page, I was having issues getting my <input>'s to align in the center, for some reason they
+would auto-align to the left. I tried using align:center on a <div> but nothing worked.
+
+////////////////
+
+Solutions:
+1. I decided to add a container and use the container as a guide for the inputs to center.
+        CODE: <div id="page" class="container" style="width:100%; mind-width:300px; max-width:600px;"></div> 
+        
+2. Next I decided to use a grid within the container, I used 'col-md-12' to move the inputs 12 tiles over to the
+   right, thus stretching the inputs to be in the center.
+        CODE: <div class="col-md-12">
+
